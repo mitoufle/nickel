@@ -1,0 +1,21 @@
+/--------------------------------------------------------------------/
+/ This file explains how to update your CSS file using SASS and SCSS /
+/ on materialize content.                                            /
+/--------------------------------------------------------------------/
+
+To edit CSS file, you need to work on _variables.scss which is a generic
+file for style management.
+
+.scss files are not readable as style file by any browser. in order to change
+it to .css files, you need to use SASS which is a RUBY gem(bundle).
+
+Install ruby, then install sass using uby cmd with 'gem install sass', still
+in ruby cmd use this command to update css file:
+
+'sass --watch sourcefolder/sass:destinationfolder/css'
+
+in this case, when prompt placed in nickel/style/ use:
+
+'sass --watch scss/materialize.scss:compiled/test.css'
+
+your css file will be auto updated once one off the scss file is edited.
